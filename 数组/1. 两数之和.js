@@ -13,6 +13,7 @@ var twoSum = function(nums, target) {
   // 2. 新建 cache 以每项的值为 key 索引为 value
   const cache = {}
   // 3. 遍历数组
+  // for in 会超时
   for(let i = 0; i < nums.length; i++) {
     // 4. 缓存每一项但是相同值的项会覆盖
     // 导致想要判断的项和预期不一致
